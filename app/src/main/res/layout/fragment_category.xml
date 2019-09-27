@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_main2">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/image"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_weight="0"
+                android:scaleType="centerCrop"
+
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <Button
+                android:id="@+id/auto_select"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:layout_marginStart="32dp"
+                android:layout_marginTop="24dp"
+                android:layout_marginEnd="32dp"
+                android:background="@drawable/red_button_selector"
+                android:text="@string/autoselect_recipe"
+                android:textAlignment="center"
+                android:textAllCaps="true"
+                android:textColor="@color/white"
+                android:textSize="16sp"
+                android:textStyle="bold"
+
+                app:layout_constraintBottom_toBottomOf="@id/image"
+                app:layout_constraintTop_toBottomOf="@id/image" />
+
+
+            <LinearLayout
+                android:id="@+id/left_line"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+
+                app:layout_constraintBottom_toBottomOf="@id/your_recipes"
+                app:layout_constraintHorizontal_chainStyle="packed"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toLeftOf="@id/your_recipes"
+                app:layout_constraintTop_toTopOf="@id/your_recipes">
+
+                <include layout="@layout/double_lines_view" />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/your_recipes"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="16dp"
+                android:gravity="center"
+                android:text="@string/your_recipes"
+                android:textColor="@color/text_gray_main"
+                android:textSize="16sp"
+
+                app:layout_constraintLeft_toRightOf="@id/left_line"
+                app:layout_constraintRight_toLeftOf="@id/right_line"
+                app:layout_constraintTop_toBottomOf="@id/auto_select" />
+
+            <LinearLayout
+                android:id="@+id/right_line"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+
+                app:layout_constraintBottom_toBottomOf="@id/your_recipes"
+                app:layout_constraintLeft_toRightOf="@id/your_recipes"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="@id/your_recipes">
+
+                <include layout="@layout/double_lines_view" />
+
+            </LinearLayout>
+
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recicler_view"
+                android:layout_width="match_parent"
+                android:layout_height="400dp"
+                android:layout_marginTop="20dp"
+
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/your_recipes"/>
+
+            <ProgressBar
+                android:id="@+id/loading"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="32dp"
+
+                app:layout_constraintLeft_toLeftOf="@id/recicler_view"
+                app:layout_constraintRight_toRightOf="@id/recicler_view"
+                app:layout_constraintTop_toTopOf="@id/recicler_view" />
+
+            <TextView
+                android:id="@+id/error_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="32dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+
+                android:textColor="@color/white"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:textAlignment="center"
+                android:text="@string/loading_error"
+                android:visibility="gone"
+
+                app:layout_constraintLeft_toLeftOf="@id/recicler_view"
+                app:layout_constraintRight_toRightOf="@id/recicler_view"
+                app:layout_constraintTop_toTopOf="@id/recicler_view"/>
+
+            <TextView
+                android:id="@+id/emptylist_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="32dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+
+                android:textColor="@color/white"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:textAlignment="center"
+                android:text="@string/add_your_recipes"
+                android:visibility="gone"
+
+                app:layout_constraintLeft_toLeftOf="@id/recicler_view"
+                app:layout_constraintRight_toRightOf="@id/recicler_view"
+                app:layout_constraintTop_toTopOf="@id/recicler_view"/>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </ScrollView>
+
+
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/new_recipe"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_gravity="bottom|end"
+            android:layout_margin="10dp"
+            android:background="@drawable/red_button_circle_selector"
+            android:clickable="true"
+            android:focusable="true"
+            android:padding="15dp"
+            android:src="@drawable/ic_plus" />
+
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+</FrameLayout>

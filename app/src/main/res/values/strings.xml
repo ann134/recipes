@@ -1,0 +1,123 @@
+<resources>
+    <string name="app_name">Ежедневник рецептов</string>
+    <string name="disconnect">НЕТ СОЕДИНЕНИЯ</string>
+
+
+    <!--drawer-->
+    <string name="profile">Профиль</string>
+    <string name="timer">Таймер</string>
+    <string name="archive_menu">Архив меню</string>
+    <string name="exit">Выход</string>
+
+
+    <!--tile-->
+    <string name="recipe_diary">Ежедневник рецептов</string>
+    <string name="title_registration">Регистрация</string>
+
+
+    <string name="loading_error">НЕ УДАЛОСЬ ЗАГРУЗИТЬ ДАННЫЕ</string>
+    <string name="sending_error">НЕ УДАЛОСЬ ОТПРАВИТЬ ДАННЫЕ</string>
+
+
+    <!--log in and register-->
+    <string name="email">E-Mail</string>
+    <string name="password">Пароль</string>
+    <string name="sign_in">Войти</string>
+    <string name="or">или</string>
+    <string name="register">Зарегистрироваться</string>
+    <string name="username">Имя пользователя</string>
+    <string name="password_again">Повторите пароль</string>
+
+
+    <!--currentFragment Profile-->
+    <string name="set_avatar">Для установки своего аватара нажмите на изображение слева</string>
+    <string name="gender">Пол</string>
+    <string name="male">Мужской</string>
+    <string name="female">Женский</string>
+    <string name="date_of_birth">Дата рождения</string>
+    <string name="city">Город</string>
+    <string name="save_changes">Сохранить изменения</string>
+    <string name="buy">Куплено</string>
+    <string name="change_password"> <u>Изменить пароль</u> </string>
+    <string name="change_password_without_ul">Изменить пароль</string>
+    <string name="old_password"> Старый пароль </string>
+    <string name="new_password"> Новый пароль </string>
+    <string name="wrong_data"> Некорректный ввод </string>
+    <string name="change_success"> Пароль изменен </string>
+
+
+    <!--currentFragment Radial Menu-->
+    <string name="chose_category_of_food">Выберите категорию блюд, которую хотите приготовить</string>
+    <string name="chose_meal_or_autoselect">Выберите какое блюдо Вы хотите приготовить на «%s», или воспользуйтесь «Автовыбором»</string>
+    <string name="chose_meal_for_guests">Ждете гостей? Выберите что будите готовить!</string>
+    <string name="prepared_menu">Готовое меню</string>
+    <string name="autoselect">Автовыбор</string>
+
+    <!--currentFragment CategoryFragment-->
+    <string name="your_recipes">Ваши рецепты</string>
+    <string name="autoselect_recipe">Автовыбор рецепта</string>
+    <string name="add_your_recipes">Добавьте свой первый рецепт нажав на кнопку «Плюс»</string>
+
+    <!--fragment RecipeResponse-->
+    <string name="recipe_products">Продукты:</string>
+    <string name="recipe_steps">Как готовить?</string>
+
+    <!--fragment View Pager-->
+    <string name="toast_add">Добавлено в "Готовое меню"</string>
+    <string name="toast_delete">Удалено</string>
+
+    <!--fragment View Pager RecipeResponse-->
+    <string name="ingredients_products">Состав:</string>
+
+    <!--fragment Change RecipeResponse-->
+    <string name="add_recipe">Добавить рецепт</string>
+    <string name="change_recipe">Редактировать рецепт</string>
+    <string name="change_image">ЗАМЕНИТЬ ФОТО</string>
+    <string name="add_image">Нажмите на изображение, чтобы добавить фото рецепта</string>
+    <string name="recipe_name">Название рецепта</string>
+
+    <!--dialog Add Product-->
+    <string name="add_product">Добавить продукт</string>
+    <string name="product_name">Название продукта</string>
+    <string name="product_unit">Ед. измерения:</string>
+    <string name="product_count">Количество</string>
+    <string name="add_button">Добавить</string>
+
+    <!--dialog Add Step-->
+    <string name="add_step">Добавить шаг</string>
+    <string name="step_description">Описание шага</string>
+
+
+    <!--fragment Prepared Menu-->
+    <string name="save_in_archive">Сохранено в "Архиве меню"</string>
+    <string name="products_text">"Отметьте продукты которые есть в холодильнике!" </string>
+
+
+    <!--fragment Products-->
+    <string name="products_list">Список покупок</string>
+    <string name="products_list_text">Список покупок, в магазине не забудьте отметить уже купленное</string>
+
+
+
+
+
+
+
+    <string name="delete_recipe_btn">Удалить блюдо</string>
+    <string name="change_recipe_btn">Сменить блюдо</string>
+
+
+    <string name="empty_prepared_menu_text">Ваш список "Готовых рецептов" пока пуст. Воспользуйтесь "Автовыбором" для составления списка.</string>
+    <string name="empty_archive_text">Ваш архив пуст.</string>
+    <string name="ok">OK</string>
+    <string name="birthday_error">Введена некорректная дата рождения</string>
+    <string name="fields_error">Заполнены не все поля</string>
+    <string name="email_error">Неправильно введен e-mail</string>
+    <string name="passwords_error">Введенные пароли не совпадают</string>
+    <string name="add_to_archive">Меню добавлено в архив. Перейдите во вкладку «Продукты» для выбора продуктов</string>
+    <string name="wrong_login_or_password">Неверный логин или пароль</string>
+    <string name="empty_products">Cписок продуктов пуст. Создайте "Готовое меню".</string>
+    <string name="empty_pager_list">Необходимо добавить рецепты.</string>
+
+
+</resources>

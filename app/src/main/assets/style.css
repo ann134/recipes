@@ -1,0 +1,80 @@
+ul.oglavl {
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+    background-color: #1c2126;
+    }
+
+
+ul.oglavl li {
+    border-bottom: 2px dotted #C2C2C2;
+    position: relative;
+    padding: 0;
+    margin-bottom:5px;
+    background-color: #1c2126;
+    }
+
+    html{
+
+         margin-right:4px;
+         background-color: #1c2126;
+     }
+
+html body{
+    width: 100%;
+    margin-right:7em;
+    background-color: #1c2126;
+}
+
+ul.oglavl li span {
+    background-color: #1c2126;
+    margin: 0;
+    }
+
+
+ul.oglavl li span.text, ul.oglavl li span.page {
+    bottom: -5px;
+    background-color: #1c2126;
+    color: #FFF;
+    }
+
+ul.oglavl li span.textp, ul.oglavl li span.pagep {
+     bottom: -5px;
+     background-color: #1c2126;
+     color: #FFF;
+     }
+
+
+
+
+ul.oglavl span.text {
+    position :relative;
+    margin-right:7em;
+    padding-right:2px;
+    background-color: #1c2126;
+    color: #FFF;
+}
+
+ul.oglavl span.page {
+    position: absolute;
+    right: 0;
+    padding-left:2px;
+}
+
+
+
+    ul.oglavl span.textp {
+        position :relative;
+        margin-right:7em;
+        padding-right:2px;
+        background-color: #1c2126;
+        text-decoration: line-through;
+        color: #FFF;
+    }
+
+    ul.oglavl span.pagep {
+        text-decoration: line-through;
+        position: absolute;
+        right: 0;
+        padding-left:2px;
+    }

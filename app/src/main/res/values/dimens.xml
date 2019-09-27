@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="view_pager_indicator_margin">8dp</dimen>
+    <dimen name="underline_height">1dp</dimen>
+    <dimen name="dialog_margin">50dp</dimen>
+</resources>

@@ -1,0 +1,17 @@
+<inset xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="1dp"
+    android:layout_gravity="bottom"
+    android:insetLeft="8dp"
+    android:insetRight="8dp">
+
+    <layer-list>
+        <item android:gravity="bottom">
+            <shape>
+                <size android:height="1dp" />
+                <solid android:color="#293139" />
+            </shape>
+        </item>
+    </layer-list>
+
+</inset>

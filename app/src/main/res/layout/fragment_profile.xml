@@ -1,0 +1,253 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_main1">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_marginStart="32dp"
+                android:layout_marginTop="24dp"
+                android:layout_marginEnd="32dp"
+                android:layout_marginBottom="24dp"
+                android:orientation="horizontal">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/avatar"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_weight="0"
+                    android:src="@drawable/default_avatar"
+                    app:civ_border_color="@color/stroke"
+                    app:civ_border_width="2dp" />
+
+                <TextView
+                    android:id="@+id/avatar_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginRight="12dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="@string/set_avatar"
+                    android:textAlignment="viewStart"
+                    android:textColor="@color/text_gray3"
+                    android:textSize="15sp" />
+
+            </LinearLayout>
+
+
+            <EditText
+                android:id="@+id/username"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:layout_marginStart="32dp"
+                android:layout_marginTop="12dp"
+                android:layout_marginEnd="32dp"
+                android:background="@drawable/edit_text_bg"
+                android:drawableEnd="@drawable/ic_username"
+                android:hint="@string/username"
+                android:inputType="textPersonName|textCapWords"
+                android:maxLines="1"
+                android:maxLength="10"
+                android:paddingStart="24dp"
+                android:paddingEnd="24dp"
+                android:scrollHorizontally="true"
+                android:textColor="@color/white"
+                android:textColorHint="@color/text_gray_main" />
+
+            <EditText
+                android:id="@+id/email"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:layout_marginStart="32dp"
+                android:layout_marginTop="12dp"
+                android:layout_marginEnd="32dp"
+                android:background="@drawable/edit_text_bg"
+                android:drawableEnd="@drawable/ic_email"
+                android:visibility="gone"
+                android:hint="@string/email"
+                android:inputType="textEmailAddress"
+                android:maxLines="1"
+                android:maxLength="25"
+                android:paddingStart="24dp"
+                android:paddingEnd="24dp"
+                android:scrollHorizontally="true"
+                android:textColor="@color/white"
+                android:textColorHint="@color/text_gray_main" />
+
+
+            <Spinner
+                android:id="@+id/gender_spinner"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:background="@drawable/edit_text_bg"
+                android:layout_marginStart="32dp"
+                android:layout_marginTop="12dp"
+                android:layout_marginEnd="32dp"
+                android:paddingStart="24dp"
+                android:paddingEnd="24dp" />
+
+            <!--<EditText
+                android:id="@+id/gender"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:layout_marginStart="32dp"
+                android:layout_marginTop="12dp"
+                android:layout_marginEnd="32dp"
+                android:background="@drawable/edit_text_bg"
+                android:drawableEnd="@drawable/ic_gender"
+                android:hint="@string/gender"
+                android:inputType="text"
+                android:maxLines="1"
+                android:paddingStart="24dp"
+                android:paddingEnd="24dp"
+                android:scrollHorizontally="true"
+                android:textColor="@color/white"
+                android:textColorHint="@color/text_gray_main" />-->
+
+
+
+            <EditText
+                android:id="@+id/date_of_birth"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:layout_marginStart="32dp"
+                android:layout_marginTop="12dp"
+                android:layout_marginEnd="32dp"
+                android:background="@drawable/edit_text_bg"
+                android:drawableEnd="@drawable/ic_date"
+                android:hint="@string/date_of_birth"
+                android:inputType="date"
+                android:maxLength="10"
+                android:maxLines="1"
+                android:paddingStart="24dp"
+                android:paddingEnd="24dp"
+                android:scrollHorizontally="true"
+                android:textColor="@color/white"
+                android:textColorHint="@color/text_gray_main" />
+
+
+            <!--<LinearLayout-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="56dp"-->
+                <!--android:orientation="horizontal"-->
+                <!--android:layout_marginStart="32dp"-->
+                <!--android:layout_marginEnd="32dp"-->
+                <!--android:background="@drawable/edit_text_bg"-->
+                <!--android:drawableEnd="@drawable/ic_date"-->
+                <!--android:hint="@string/date_of_birth"-->
+                <!--android:inputType="date">-->
+
+                <!--<TextView-->
+                    <!--android:id="@+id/tv_birth_hint"-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="match_parent"-->
+                    <!--android:gravity="center_vertical"-->
+                    <!--android:layout_weight="1"-->
+                    <!--android:layout_gravity="center_vertical"-->
+                    <!--android:text="@string/date_of_birth"-->
+                    <!--android:textColor="@color/hint_card_text_color_with_alfa1"-->
+                    <!--android:paddingLeft="24dp"-->
+                    <!--android:textSize="18sp"/>-->
+
+
+                <!--<com.github.pinball83.maskededittext.MaskedEditText-->
+                    <!--android:id="@+id/date_of_birth2"-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="56dp"-->
+                    <!--android:layout_weight="1"-->
+                    <!--android:visibility="gone"-->
+                    <!--android:textColor="@color/white"-->
+                    <!--android:inputType="date"-->
+                    <!--app:mask="**/**/****"-->
+                    <!--app:notMaskedSymbol="*"-->
+                    <!--android:maxLines="1"-->
+                    <!--android:paddingStart="24dp"-->
+                    <!--android:paddingEnd="24dp"-->
+                    <!--/>-->
+
+
+                <!--<ImageView-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:paddingRight="24dp"-->
+                    <!--android:src="@drawable/ic_date"-->
+                    <!--android:layout_gravity="center_vertical"/>-->
+
+
+
+
+            <!--</LinearLayout>-->
+
+            <EditText
+                android:id="@+id/city"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:layout_marginStart="32dp"
+                android:layout_marginTop="12dp"
+                android:layout_marginEnd="32dp"
+                android:background="@drawable/edit_text_bg"
+                android:drawableEnd="@drawable/ic_city"
+                android:hint="@string/city"
+                android:inputType="text|textCapWords"
+                android:maxLength="15"
+                android:maxLines="1"
+                android:paddingStart="24dp"
+                android:paddingEnd="24dp"
+                android:scrollHorizontally="true"
+                android:textColor="@color/white"
+                android:textColorHint="@color/text_gray_main" />
+
+            <Button
+                android:id="@+id/save_button"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:layout_marginStart="32dp"
+                android:layout_marginTop="24dp"
+                android:layout_marginEnd="32dp"
+                android:background="@drawable/red_button_selector"
+                android:text="@string/save_changes"
+                android:textAlignment="center"
+                android:textAllCaps="true"
+                android:textColor="@color/white"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <ProgressBar
+                android:id="@+id/loading"
+                android:layout_width="wrap_content"
+                android:layout_height="56dp"
+                android:layout_gravity="center_horizontal"
+                android:visibility="gone"/>
+
+            <TextView
+                android:id="@+id/change_password"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="12dp"
+                android:layout_marginBottom="12dp"
+                android:clickable="true"
+                android:focusable="true"
+                android:text="@string/change_password"
+                android:textColor="@drawable/clickable_text_selector"
+                android:textSize="16sp" />
+
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+</FrameLayout>

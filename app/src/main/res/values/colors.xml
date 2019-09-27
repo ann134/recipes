@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="colorPrimary">#14191e</color>
+    <color name="colorPrimaryDark">#14191e</color>
+    <color name="colorAccent">#e35331</color>
+
+    <color name="red_button_pressed">#ee4119</color>
+
+    <color name="white">#ffffff</color>
+    <color name="white_alfa">#7CAFAFAF</color>
+    <color name="black">#000000</color>
+    <color name="transparent">#00000000</color>
+
+    <color name="text_gray1">#a4a5a6</color>
+    <color name="text_gray2">#a6a7a8</color>
+    <color name="text_gray3">#42484e</color>
+    <color name="text_gray_main">#5f666d</color>
+
+    <color name="background_main1">#1c2126</color>
+    <color name="background_main2">#1b2025</color>
+
+    <color name="background_item">#20262c</color>
+    <color name="background_item_selected">#181D22</color>
+
+    <color name="stroke_recipe">#2d3237</color>
+    <color name="stroke">#474c51</color>
+
+    <color name="line_view">#2d3237</color>
+
+    <color name="icon_toolbar">#747678</color>
+
+    <color name="arrow_radial_menu">#8b8d8f</color>
+    <color name="stroke_radial_menu">#2c3035</color>
+
+    <color name="stroke_avatar_drawer">#282c31</color>
+    <color name="text_gray_menu_drawer">#a6a7a8</color>
+    <color name="icon_menu_drawer">#444a52</color>
+    <color name="line_view_menu_drawer">#2a3139</color>
+
+    <color name="stroke_inactive_button">#3a4047</color>
+    <color name="icon_inactive_button">#52585f</color>
+
+    <color name="step_number">#5d646b</color>
+
+    <color name="red_card_stroke">#FF0000</color>
+
+    <color name="ic_launcher_background">#2B2B2B</color>
+
+</resources>

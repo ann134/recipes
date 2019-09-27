@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.Toolbar
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    style="@style/AppTheme"
+    android:id="@+id/my_action_bar"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/colorPrimary"
+    android:orientation="vertical">
+
+    <!--android:background="@color/colorPrimary"-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="?android:attr/actionBarSize"
+        android:gravity="end|center_vertical"
+        android:orientation="horizontal"
+        android:paddingRight="8dp">
+
+        <LinearLayout
+            android:id="@+id/button_back_layout"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="4dp"
+            android:gravity="center"
+            android:layout_marginBottom="4dp"
+            android:visibility="visible"
+            android:background="@drawable/toolbar_button_selector">
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="match_parent"
+                android:src="@drawable/ic_arrow_back" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/toolbar_title"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="start|center_vertical"
+            android:layout_marginLeft="16dp"
+            android:maxLines="1"
+            app:autoSizeTextType="uniform"
+            app:autoSizeMaxTextSize="21sp"
+            android:ellipsize="end"
+            android:textColor="@color/white"
+            />
+
+
+        <LinearLayout
+            android:id="@+id/second_action_button_layout"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_marginTop="4dp"
+            android:visibility="gone"
+            android:layout_marginBottom="4dp"
+            android:layout_marginRight="8dp"
+            android:gravity="center"
+            android:background="@drawable/toolbar_button_selector">
+
+            <ImageView
+                android:id="@+id/imv_second_action_btn"
+                android:layout_width="30dp"
+                android:padding="5dp"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/action_button_layout"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_marginTop="4dp"
+            android:layout_marginBottom="4dp"
+            android:gravity="center"
+            android:background="@drawable/toolbar_button_selector">
+
+        <ImageView
+            android:id="@+id/imv_action_btn"
+            android:layout_width="30dp"
+            android:padding="5dp"
+            android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/bar_avatar"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            app:civ_border_color="@color/stroke_avatar_drawer"
+            app:civ_border_width="2dp"
+            android:visibility="gone"/>
+
+    </LinearLayout>
+
+</androidx.appcompat.widget.Toolbar>
